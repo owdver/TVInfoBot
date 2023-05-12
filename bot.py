@@ -1,5 +1,3 @@
-import os
-import logging
 import logging.config
 
 # Get logging configurations
@@ -22,6 +20,4 @@ if __name__ == "__main__" :
         api_hash=API_HASH,
         workers=50
     )
-    try:
-        app.start()
-        app.run()
+    app.start()
