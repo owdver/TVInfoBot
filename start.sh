@@ -1,5 +1,5 @@
 echo "Cloning Repo, Please Wait..."
-git clone -b master https://github.com/owdver/TVInfoBot.git /TVInfoBot
+git clone -b main https://github.com/owdver/TVInfoBot.git /TVInfoBot
 cd /TVInfoBot
 echo "Installing Requirements..."
 pip3 install -U -r requirements.txt
