@@ -1,9 +1,13 @@
 import os
 import logging
+import logging.config
+
+# Get logging configurations
+logging.config.fileConfig('logging.conf')
+logging.getLogger().setLevel(logging.INFO)
+logging.getLogger("pyrogram").setLevel(logging.ERROR)
+logging.getLogger("imdbpy").setLevel(logging.ERROR)
 import pyrogram
-
-logging.basicConfig(level=logging.INFO)
-
 from config import API_ID, API_HASH, BOT_TOKEN
 
 
@@ -16,7 +20,7 @@ if __name__ == "__main__" :
         bot_token=BOT_TOKEN,
         api_id=API_ID,
         api_hash=API_HASH,
-        workers=300
+        workers=50
     )
     try:
         app.start()
@@ -24,5 +28,5 @@ if __name__ == "__main__" :
     except KeyboardInterrupt:
         app.stop()
     except Exception as e:
-        logging.error(f"Error: {e}")
+        logging.error("Bot stopped. Bye.")
         app.stop()
