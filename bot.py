@@ -25,8 +25,3 @@ if __name__ == "__main__" :
     try:
         app.start()
         app.run()
-    except KeyboardInterrupt:
-        app.stop()
-    except Exception as e:
-        logging.error("Bot stopped. Bye.")
-        app.stop()
