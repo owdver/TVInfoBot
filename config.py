@@ -12,10 +12,10 @@ def is_enabled(value, default):
 
 
 # Set up Pyrogram client
-api_id = int(environ['API_ID'])
-api_hash = environ['API_HASH']
-bot_token = environ['BOT_TOKEN']
+API_ID = int(environ['API_ID'])
+API_HASH = environ['API_HASH']
+BOT_TOKEN = environ['BOT_TOKEN']
 
 
 # Set up TMDB API key
-tmdb.API_KEY = os.environ.get("TMDB_API_KEY")
+tmdb.API_KEY = environ['TMDB_API_KEY']
