@@ -1,11 +1,10 @@
-FROM python:3
+FROM python:latest
 
-RUN apt update && apt upgrade -y
-RUN apt install git -y
-COPY requirements.txt /requirements.txt
+WORKDIR /app
 
-RUN cd /
+COPY requirements.txt .
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /TVInfoBot
-WORKDIR /TVInfoBot
-CMD python3 bot.py
+
+COPY . .
+
+CMD ["python3", "bot.py"]
