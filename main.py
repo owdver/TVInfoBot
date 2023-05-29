@@ -5,10 +5,10 @@ import pymongo
 from pymongo import MongoClient
 
 # Create a bot object with the token
-bot = telebot.TeleBot("YOUR_BOT_TOKEN_HERE")
+bot = telebot.TeleBot("6230370760:AAH_5KOR3n6W93Mu-q9CEakMsOTd7Z-u5Z4")
 
 # Connect to the MongoDB database
-client = MongoClient("mongodb+srv://<username>:<password>@cluster0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://owdver:owdver@cluster0.pzapysa.mongodb.net/?retryWrites=true&w=majority")
 db = client["tvshows"]
 subscriptions = db["subscriptions"]
 
