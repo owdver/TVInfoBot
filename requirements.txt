@@ -1,7 +1,4 @@
 requests
-sqlite3
 telebot
 datetime
-numpy
-cython
-multiprocessing 
+pymongo
