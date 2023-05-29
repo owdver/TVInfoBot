@@ -1,4 +1,7 @@
-pyrogram
 requests
-asyncio
-tmdbsimple
+sqlite3
+telebot
+datetime
+numpy
+cython
+multiprocessing 
