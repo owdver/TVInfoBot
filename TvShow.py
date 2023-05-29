@@ -8,7 +8,7 @@ import cython # for compiling Python code to C
 import multiprocessing # for parallel processing
 
 # Create a bot object with the token
-bot = telebot.TeleBot("YOUR_BOT_TOKEN")
+bot = telebot.TeleBot("6230370760:AAH_5KOR3n6W93Mu-q9CEakMsOTd7Z-u5Z4")
 
 # Connect to the database
 conn = sqlite3.connect("tvshows.db")
